@@ -24,7 +24,6 @@ const ShowSearchResults = () =>{
         }
       }, [movies]);
 
-    // TO DO: mask API key: Priority level: 1
     const url =  '/api/bySearch/' + searchStringInURL + '/' + pageNum
     const { data: dataFromAPI, error } = useSWR(searchStringInURL ? url : null, fetcher)
 
