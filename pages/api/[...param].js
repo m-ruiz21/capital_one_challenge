@@ -11,7 +11,6 @@ export default async (req, res) => {
 
     const response = await fetch(url)
     const dataResponse = await response.json();
-    res.status(200).json(dataResponse)
-    // res.json(json)
+    res.json(dataResponse)
   }
   

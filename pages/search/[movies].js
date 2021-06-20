@@ -49,6 +49,17 @@ const ShowSearchResults = () =>{
         }
     }, [dataFromAPI]);
 
+    if(error){
+        return (
+            <Error500/>
+        )
+    }
+
+    if(dataFromAPI?.Response == "False"){
+        return(
+            <Movie404/>
+        )
+    }
 
     const BtnLoadMore = () => {   // figure out how to change name
         if(pageNum < Math.ceil(data?.totalResults/10) ){
@@ -67,19 +78,6 @@ const ShowSearchResults = () =>{
         } else {
             return <div></div>
         }
-    }
-    
-
-    if(error){
-        return (
-            <Error500/>
-        )
-    }
-
-    if(data?.Response == "False"){
-        return(
-            <Movie404/>
-        )
     }
 
     {/*the code below needed className modifiers to become responsive.
