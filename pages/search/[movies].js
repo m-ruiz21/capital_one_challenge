@@ -60,7 +60,7 @@ const ShowSearchResults = () =>{
         )
     }
 
-    const BtnLoadMore = () => {   // figure out how to change name
+    const BtnLoadMore = () => {
         if(pageNum < Math.ceil(data?.totalResults/10) ){
             return (
                 <button onClick={() => setPageNum((() => pageNum + 1))} className="bg-transparent hover:bg-blue-light text-blue-light font-semibold 
