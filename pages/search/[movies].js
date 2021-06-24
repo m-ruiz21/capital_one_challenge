@@ -109,7 +109,7 @@ const ShowSearchResults = () =>{
                                         <p>{movie?.Year}</p>  
                                     </a>
                                 </Link>
-                                <img className="rounded-3xl" src={posterToShow} title="Title"/>
+                                <img className="rounded-3xl" src={posterToShow} title="Title" alt="Movie Poster"/>
                             </div>
                         );
                     })}

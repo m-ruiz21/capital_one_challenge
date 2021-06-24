@@ -17,7 +17,7 @@ const Recommended = ({title}) => {
                     <p>IMDb Rating: {data?.imdbRating}</p>    
                 </a>
             </Link>
-            <img className="rounded-3xl" src={data?.Poster}/>
+            <img className="rounded-3xl" src={data?.Poster} alt="Movie Poster"/>
         </div> 
     )
 };

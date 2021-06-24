@@ -60,7 +60,7 @@ const ShowSearchResults = () =>{
                 <div className="md:max-w-xs"> 
                     <div className=" text-white text-lg py-2"> {data?.Rated} - {data?.Genre}</div>
                     <div className="flex md:justify-start justify-center">
-                        <img className="rounded-3xl" src={posterToShow}/>
+                        <img className="rounded-3xl" src={posterToShow} alt="Movie Poster"/>
                     </div>
                 </div>
                 <div className="py-3 xl:px-32 md:px-8 pr-8 xl:w-2/3">
