@@ -8,7 +8,7 @@ export default function Home() {
   <>
   <Head>
     <title>OMDb Movie Search</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" description="Search Movies in Movie Database" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
   </Head>
   <Navbar/>  
   <Body/>
