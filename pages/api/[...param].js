@@ -13,4 +13,3 @@ export default async (req, res) => {
     const dataResponse = await response.json();
     res.json(dataResponse)
   }
-  
