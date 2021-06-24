@@ -6,6 +6,7 @@ import Navbar from 'components/navbar/navbar'
 import Link from 'next/link';
 import Error500 from 'components/error/error-500'
 import Movie404 from 'components/error/movie-404'
+import Head from 'next/head'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json()) 
 
@@ -84,6 +85,10 @@ const ShowSearchResults = () =>{
 
     return (
         <>
+        <Head>
+            <title>OMDb Movie Search</title>
+            <meta name="description" content="movie search"/>
+        </Head>
         <Navbar/>
         <div className="bg-blue">
             <div className="container mx-auto flex flex-col h-full w-full items-center justify-center">

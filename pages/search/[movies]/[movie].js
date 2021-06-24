@@ -6,6 +6,7 @@ import Search from 'components/body/search'
 import Movie404 from 'components/error/movie-404'
 import Error500 from 'components/error/error-500'
 import { InfoHOC } from 'components/body/infoHOC';
+import Head from 'next/head'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 const ShowSearchResults = () =>{
@@ -47,6 +48,10 @@ const ShowSearchResults = () =>{
 
     return (
         <>
+        <Head>
+            <title>OMDb Movie Search</title>
+            <meta name="description" content="movie details"/>
+        </Head>
         <Navbar/>
             <div className="container mx-auto flex flex-col h-full w-full items-center">
                 <div className="md:w-1/2 w-3/4 h-full py-4">              
